@@ -1,0 +1,59 @@
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.profile-section {
+  background-color: white;
+  color: black;
+  margin-top: 50px;
+}
+
+.contact-section p {
+  font-size: 20px;
+}
+
+.profile-section h1 {
+  color: black;
+}
+
+.profile-section h3 {
+  color: black;
+}
+
+.seperator {
+  background-color: #060606;
+  border-radius: 0px 0px 0px 50px;
+  height: 50px;
+}
+
+.seperator-2 {
+  background-color: white;
+  border-radius: 0px 50px 0px 0px;
+  height: 50px;
+}
+
+#loadnav {
+  position: fixed;
+  width: 100%;
+  background: rgb(75,75,75);
+  background: linear-gradient(0deg, rgba(75,75,75,0.5676645658263305) 0%, rgba(6,6,6,1) 100%);
+  top: 0;
+  right: 0;
+}
+
+.card-body .btn-outline-light{
+  color: white;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card .btn {
+  margin: 2px;
+}
