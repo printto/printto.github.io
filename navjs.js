@@ -30,7 +30,7 @@ $(document).ready(function() {
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" href="pappim-pipatkasira-resume.pdf">PDF file</a>
-              <a class="dropdown-item" href="pappim-pipatkasira-resume.jpg">JPEG file</a>
+              <a class="dropdown-item" href="pappim-pipatkasira-resume.zip">JPEG files</a>
             </div>
         </div>
       </ul>
