@@ -37,6 +37,27 @@ $(document).ready(function() {
     </div>
   </nav>`);
 
+  $(window).keypress(function(e) {
+       var ev = e || window.event;
+       var key = ev.keyCode || ev.which;
+       //Space bar
+       // if(key == 13) {
+       //   $('.card').addClass("expandable");
+       //   console.log("Presentation mode enabled.");
+       // }
+
+       //Plus
+       if(key == 43) {
+         $('.card').addClass("expandable");
+         console.log("Presentation mode enabled.");
+       }
+       //Minus
+       if(key == 45) {
+         $('.card').removeClass("expandable");
+         console.log("Presentation mode disabled.");
+       }
+   });
+
 /*
   var current_title = $(document).attr('title');
   if (current_title.includes("Software Engineer")) {
@@ -97,3 +118,14 @@ $(document).ready(function() {
   });
 
 });
+
+function presentationMode(isOn) {
+  if(isOn) {
+    $('.card').addClass("expandable");
+    console.log("Presentation mode enabled.");
+  }
+  else if(!isOn) {
+    $('.card').removeClass("expandable");
+    console.log("Presentation mode disabled.");
+  }
+}

@@ -53,6 +53,13 @@ body {
 .card {
   margin-bottom: 20px;
   min-height: 96%;
+  transition: transform 1s, border-color 1s;
+}
+
+.expandable:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  border-color: white;
 }
 
 .card .btn {
