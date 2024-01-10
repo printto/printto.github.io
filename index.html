@@ -17,6 +17,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="navjs.js"></script>
+  <script type="text/javascript" src="js/printmov.js"></script>
   <link rel="stylesheet" href="style.css">
 
   <link rel="stylesheet" href="css/parallax.css">
@@ -50,9 +51,9 @@
         <h1 class="vov fade-in-right fast">Pappim Pipatkasrira</h1>
         <h5 class="vov fade-in-right">Kasetsart University | Software Engineer</h5>
         <h6><br /></h6>
-        <h2 class="vov fade-in-right slow">3 Years Experience</h2>
+        <h2 class="vov fade-in-right slow">4 Years Experience</h2>
         <h5 class="vov fade-in-right slower">
-          - <strong>Unity3D</strong>, <strong>AR</strong>, and <strong>VR</strong> experiences
+          - <strong>Unity3D</strong>, <strong>XR</strong> experiences.
           <br />
           - <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Javascript</strong> front-end.
           <br />
@@ -60,7 +61,7 @@
         </h5>
         <h6><br /></h6>
         <h3 class="vov fade-in-right slowest">SKILLS</h3>
-        <h5 class="vov fade-in-right slowest">&nbsp;C#, Javascript, HTML & CSS, Kotlin & Android, Java, VR & AR, and NodeJS</h5>
+        <h5 class="vov fade-in-right slowest">&nbsp;C#, Javascript, HTML & CSS, Kotlin & Android, Java, VR % AR & MR, and NodeJS</h5>
         <h4 class="vov fade-in-right slowest" style="margin-top: 30px;">IELTS 7.0</h4>
       </div>
     </div>
@@ -78,6 +79,24 @@
 
       <h3><br />Latest Projects</h3>
       <div class="row" style="color: white;">
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/knitten-ribbon.png" style="position: absolute; height: 80%; right: 100%; top: 50%; transform: translateY(-50%);">
+            <div class="card-img-top embed-responsive embed-responsive-16by9">
+              <iframe src="https://www.youtube.com/embed/9OwEGfTw734?si=zXPOT39eVP4izG-b&amp;start=16" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Knitten <strong>(1st Place Winner)</strong></h5>
+              <p class="card-text"><span class="badge badge-success">Game Jam</span> <span class="badge badge-secondary">Unity3D</span> <span class="badge badge-secondary">WebGL</span></p>
+              <p class="card-text"><i>Winner of 1-Bit Jam #2</i></p>
+              <p class="card-text">Concept: Only 2 colors at a time.</p>
+              <p class="card-text">Theme: Starts with everything, ends wth nothing.</p>
+              <a href="https://itch.io/jam/1-bit-jam-n2/rate/2367178" class="btn btn-secondary" target="_BLANK">Submission Page</a>
+              <a href="https://itch.io/jam/1-bit-jam-n2/results" class="btn btn-secondary" target="_BLANK">Result Page</a>
+            </div>
+          </div>
+        </div>
 
         <div class="col-md-4">
           <div class="card">
@@ -223,7 +242,7 @@
             </div>
             <div class="card-body">
               <h5 class="card-title">InkIt - Kajaani Winter GameJam 2019</h5>
-              <p class="card-text"><span class="badge badge-secondary">Unity3D</span></p>
+              <p class="card-text"><span class="badge badge-success">Game Jam</span> <span class="badge badge-secondary">Unity3D</span></p>
               <p class="card-text">Ink the way, get to the goal!</p>
               <p class="card-text">Start from white screen. Ink your way to the goal. Becareful not to InkIt too much or else you won't see the way!</p>
               <p class="card-text">This game is developed within 48 hours for Winter GameJam 2019 at Kajaani, Finland</p>
@@ -691,6 +710,10 @@
   </div>
 
   <script type="text/javascript" src="js/parallax.js"></script>
+
+  <script>
+    connectApi("profile-resume");
+  </script>
 
 </body>
 
