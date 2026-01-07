@@ -1,4 +1,4 @@
-$(document).ready(function () {
+// $(document).ready(function () {
   // Build nav inside #loadnav, but use the new layout/styling system
   const $nav = $('<nav/>').appendTo('#loadnav');
 
@@ -192,7 +192,7 @@ $(document).ready(function () {
       el.scrollIntoView({ behavior: 'smooth' });
     }
   });
-});
+// });
 
 // Keep global presentationMode helper
 function presentationMode(isOn) {
