@@ -6,7 +6,6 @@ $(document).ready(function () {
   $nav
     .addClass('navbar navbar-expand-lg navbar-dark fixed-top')
     .css({
-      width: "100vw",
       position: 'fixed',
       'z-index': 99999,
       transition:
