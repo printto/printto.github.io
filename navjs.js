@@ -7,7 +7,7 @@ $(document).ready(function () {
     .addClass('navbar navbar-expand-lg navbar-dark fixed-top')
     .css({
       position: 'fixed',
-      'z-index': 100,
+      'z-index': 99999,
       transition:
         'background-color 0.5s ease, backdrop-filter 0.5s ease, -webkit-backdrop-filter 0.5s ease, left 0.5s ease, right 0.5s ease, top 0.5s ease, border-radius 0.5s ease, outline 0.5s ease'
     })
