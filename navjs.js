@@ -48,8 +48,8 @@ $(document).ready(function () {
                 Download Profile
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="pappim-pipatkasira-resume.pdf">PDF file</a>
-                <a class="dropdown-item" href="pappim-pipatkasira-resume.zip">JPEG files (ZIP Archive)</a>
+                <a class="dropdown-item" href="pappim-pipatkasrira-resume.pdf">PDF file</a>
+                <a class="dropdown-item" href="pappim-pipatkasrira-resume.zip">JPEG files (ZIP Archive)</a>
               </div>
             </li> -->
           </ul>
@@ -71,8 +71,16 @@ $(document).ready(function () {
 
   ensureSpacer();
   setTimeout(ensureSpacer, 0);
-  $(window).on('resize', ensureSpacer);
-  $(document).on('shown.bs.collapse hidden.bs.collapse', '#navbarNav', ensureSpacer);
+
+  $(document).on('shown.bs.collapse hidden.bs.collapse', '#navbarNav', function () {
+    ensureSpacer();
+    computeSectionOffsets();
+  });
+
+  $(window).on('resize', function () {
+    ensureSpacer();
+    computeSectionOffsets();
+  });
 
   // Glass vs solid behaviour
   function updateGlass() {
@@ -139,6 +147,23 @@ $(document).ready(function () {
     }
   });
 
+  // Cached section offsets
+  let sections = {
+    profile: 0,
+    projects: Number.MAX_VALUE,
+    contact: Number.MAX_VALUE
+  };
+
+  function computeSectionOffsets() {
+    const $profile = $('#profile');
+    const $projects = $('#projects');
+    const $contact = $('#contact');
+
+    sections.profile = $profile.length ? ($profile.offset()?.top ?? 0) : 0;
+    sections.projects = $projects.length ? ($projects.offset()?.top ?? Number.MAX_VALUE) : Number.MAX_VALUE;
+    sections.contact = $contact.length ? ($contact.offset()?.top ?? Number.MAX_VALUE) : Number.MAX_VALUE;
+  }
+
   // Scroll-based active nav highlighting
   function updateActiveNav() {
     const $win = $(window);
@@ -146,31 +171,41 @@ $(document).ready(function () {
     const viewportHeight = $win.height();
     const scrollMarker = scrollTop + viewportHeight * 0.4;
 
-    const $profile = $('#profile');
-    const $projects = $('#projects');
-    const $contact = $('#contact');
-
-    const profileTop = $profile.length ? $profile.position().top : 0;
-    const projectsTop = $projects.length ? $projects.position().top : Number.MAX_VALUE;
-    const contactTop = $contact.length ? $contact.position().top : Number.MAX_VALUE;
-
     // Default: clear all
     $('.pnav-background, .pnav-project, .pnav-contact').removeClass('active');
 
-    if (scrollMarker >= contactTop) {
-      // In or past contact section
+    if (scrollMarker >= sections.contact) {
       $('.pnav-contact').addClass('active');
-    } else if (scrollMarker >= projectsTop) {
-      // In project section
+    } else if (scrollMarker >= sections.projects) {
       $('.pnav-project').addClass('active');
     } else {
-      // Otherwise background/profile
       $('.pnav-background').addClass('active');
     }
   }
 
+  // Initial compute after DOM ready
+  computeSectionOffsets();
+
+  // Recompute once everything (images/iframes) is loaded
+  $(window).on('load', function () {
+    computeSectionOffsets();
+    updateActiveNav();
+  });
+
+  // Throttled scroll handler for active nav
+  let ticking = false;
+  $(window).on('scroll', function () {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(function () {
+        updateActiveNav();
+        ticking = false;
+      });
+    }
+  });
+
+  // Initial highlight
   updateActiveNav();
-  $(document).on('scroll', updateActiveNav);
 
   // Click handlers
   $('.pnav-background').click(function () {
