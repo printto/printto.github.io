@@ -297,3 +297,7 @@ a.project-link:focus-visible {
 .card .badge {
   padding: 0.31em 0.4em 0.19em;
 }
+.card-img-top[src$="parallelbro.gif"] {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}

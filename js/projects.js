@@ -54,6 +54,25 @@ window.PROJECTS = [
     ]
   },
   {
+    groups: ["apps", "frontend"],
+    title: "PRINTmov Vocal",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/oMUXAV_Izx8" },
+    badges: [
+      { v: "printmov", l: "PRINTmov" },
+      { v: "secondary", l: "DiffSinger" },
+      { v: "secondary", l: "WebGPU" }
+    ],
+    body: [
+      "<i>Sing in the browser</i>",
+      "A vocal synthesizer running DiffSinger models right in the browser, accelerated by WebGPU.",
+      "No server rendering, no installation."
+    ],
+    links: [
+      { l: "Use PRINTmov Vocal", href: "https://www.printmov.com/web-synth" },
+      { l: "Watch demo", href: "https://www.youtube.com/watch?v=T40HI5h5Qpg" }
+    ]
+  },
+  {
     groups: ["apps"],
     title: "CENGINE",
     media: { type: "youtube", src: "https://www.youtube.com/embed/f5JH_weCk1g" },
@@ -85,25 +104,6 @@ window.PROJECTS = [
     ],
     links: [
       { l: "Watch demo", href: "https://youtube.com/shorts/-7uRgaLbpqI" }
-    ]
-  },
-  {
-    groups: ["apps", "frontend"],
-    title: "PRINTmov Vocal",
-    media: { type: "youtube", src: "https://www.youtube.com/embed/oMUXAV_Izx8" },
-    badges: [
-      { v: "printmov", l: "PRINTmov" },
-      { v: "secondary", l: "DiffSinger" },
-      { v: "secondary", l: "WebGPU" }
-    ],
-    body: [
-      "<i>Sing in the browser</i>",
-      "A vocal synthesizer running DiffSinger models right in the browser, accelerated by WebGPU.",
-      "No server rendering, no installation."
-    ],
-    links: [
-      { l: "Use PRINTmov Vocal", href: "https://www.printmov.com/web-synth" },
-      { l: "Watch demo", href: "https://www.youtube.com/watch?v=T40HI5h5Qpg" }
     ]
   },
   {
@@ -144,23 +144,6 @@ window.PROJECTS = [
     ]
   },
   {
-    groups: ["apps", "frontend"],
-    title: "PRINTmov Splice",
-    media: { type: "image", src: "img/projects/printmov-splice.png" },
-    badges: [
-      { v: "printmov", l: "PRINTmov" },
-      { v: "secondary", l: "Vite" }
-    ],
-    body: [
-      "<i>Edit video in your browser</i>",
-      "A lightweight multi-track video editor that exports at any resolution and frame rate.",
-      "Fully supports PRINTmov Motion projects."
-    ],
-    links: [
-      { l: "Try PRINTmov Splice", href: "https://www.printmov.com/web-video" }
-    ]
-  },
-  {
     groups: ["apps", "frontend", "backend"],
     title: "PRINTmov Speak",
     media: { type: "youtube", src: "https://www.youtube.com/embed/GmB4Y0MjiGI" },
@@ -174,6 +157,40 @@ window.PROJECTS = [
     ],
     links: [
       { l: "Try PRINTmov Speak", href: "https://www.printmov.com/tts.html" }
+    ]
+  },
+  {
+    groups: ["xr"],
+    title: "SCG The Next Chapter",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/yH3CEuOn7KA" },
+    badges: [
+      { v: "danger", l: "SCG Digital" },
+      { v: "secondary", l: "Unreal Engine" },
+      { v: "secondary", l: "Mixed Reality (MR)" }
+    ],
+    body: [
+      "An MR stage show that used chroma keying to blend reality with a virtual world.",
+      "The scene was controlled with a wooden cube, running Unreal Engine environments that ranged from full 3D sets to 360-degree spheres, or both at once."
+    ],
+    links: [
+      { l: "Watch demo", href: "https://youtu.be/yH3CEuOn7KA" }
+    ]
+  },
+  {
+    groups: ["other"],
+    title: "Full-body Tracking Prototype",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/kuU6cbhGmRc" },
+    badges: [
+      { v: "secondary", l: "Prototype" },
+      { v: "secondary", l: "Unity3D" },
+      { v: "secondary", l: "Computer Vision" }
+    ],
+    body: [
+      "<i>Motion capture without a suit</i>",
+      "Integrates OpenCV with Unity, mapping the tracked points onto a humanoid model."
+    ],
+    links: [
+      { l: "Watch demo", href: "https://youtu.be/kuU6cbhGmRc" }
     ]
   },
   {
@@ -254,150 +271,42 @@ window.PROJECTS = [
     ]
   },
   {
-    groups: ["games"],
-    title: "Tiger - Run Athletics",
-    media: { type: "youtube", src: "https://youtube.com/embed/939OeVBmSEQ" },
+    groups: ["frontend"],
+    title: "dtac Dataland",
+    media: { type: "image", src: "img/projects/dtac2.png" },
     badges: [
       { v: "ascript", l: "A-script" },
-      { v: "secondary", l: "Unity3D" },
-      { v: "secondary", l: "Android" }
+      { v: "secondary", l: "HTML5" },
+      { v: "secondary", l: "CSS" },
+      { v: "secondary", l: "Javascript" }
     ],
     body: [
-      "<i>Uncage Your Tiger</i>",
-      "Endless runner game promoting Tiger.",
-      "Avoid all the obstacles."
-    ]
-  },
-  {
-    groups: ["games"],
-    title: "The Dawn of the Epic Legend of the Tales of the Legendary Power Mage: The Reckoning",
-    media: { type: "youtube", src: "https://youtube.com/embed/BggA0cktmCM" },
-    badges: [
-      { v: "secondary", l: "Unity3D" }
-    ],
-    body: [
-      "The Dawn of the Epic Legend of the Tales of the Legendary Power Mage: The Reckoning is a fast-paced single-player 3D game for PC where you play as a powerful wizard in a magic castle, fight enemies to collect score and seek crystals to customize your spells."
-    ],
-    links: [
-      { l: "Available on Itch.io", href: "https://ukkosstruck.itch.io/power-mage" },
-      { l: "GitHub", href: "https://github.com/Sumpp1/powermage" }
-    ]
-  },
-  {
-    groups: ["games", "xr"],
-    title: "ARGhost",
-    media: { type: "youtube", src: "https://youtube.com/embed/4bP1rvzgHeA" },
-    badges: [
-      { v: "secondary", l: "Unity3D" },
-      { v: "secondary", l: "AR" }
-    ],
-    body: [
-      "A mobile augmented-reality survival horror game which simulates real ghost experiences and beating the other players’ scores from all around the world",
-      "Calculate playing space at runtime. Use real-life physical card to repel AR virtual ghosts!"
-    ],
-    links: [
-      { l: "CPE Project Archive", href: "https://ecourse.cpe.ku.ac.th/projar/project/details/1450/" },
-      { l: "GitHub", href: "https://github.com/masty123/ARGHOST" }
-    ]
-  },
-  {
-    groups: ["games"],
-    title: "InkIt - Kajaani Winter GameJam 2019",
-    media: { type: "youtube", src: "https://youtube.com/embed/wR9P_eidf2w" },
-    badges: [
-      { v: "success", l: "Game Jam" },
-      { v: "secondary", l: "Unity3D" }
-    ],
-    body: [
-      "Ink the way, get to the goal!",
-      "Start from white screen. Ink your way to the goal. Be careful not to InkIt too much or else you won't see the way!",
-      "This game is developed within 48 hours for Winter GameJam 2019 at Kajaani, Finland"
-    ],
-    links: [
-      { l: "GitHub", href: "https://github.com/printto/InkIt-Winter-GameJam-2019" }
-    ]
-  },
-  {
-    groups: ["games", "xr"],
-    title: "Vrive",
-    media: { type: "image", src: "img/projects/vrive.png" },
-    badges: [
-      { v: "secondary", l: "Unity3D" },
-      { v: "secondary", l: "VR" }
-    ],
-    body: [
-      "VR driving project",
-      "Driving project made with Unity3D. Simulates driving in VR with fully controls from VR controllers."
-    ],
-    links: [
-      { l: "GitHub", href: "https://github.com/ziveso/Vrive" }
-    ]
-  },
-  {
-    groups: ["games"],
-    title: "ParallelBro",
-    media: { type: "image", src: "img/projects/parallelbro.gif" },
-    badges: [
-      { v: "secondary", l: "Unity2D" },
-      { v: "secondary", l: "Online Multi-player" },
-      { v: "secondary", l: "Photon" }
-    ],
-    body: [
-      "Can you save the 2 world?",
-      "Help each other to solve the puzzle! 2 players across the network.",
-      "Compatible with Android devices"
-    ],
-    links: [
-      { l: "GitHub", href: "https://github.com/masty123/ParallelBro/tree/master" }
-    ]
-  },
-  {
-    groups: ["games"],
-    title: "Skullbreak",
-    media: { type: "youtube", src: "https://youtube.com/embed/kz2mH1xPeVI" },
-    badges: [
-      { v: "secondary", l: "Unity3D" },
-      { v: "secondary", l: "Android" }
-    ],
-    body: [
-      "Endless runner project",
-      "In the game a death monster from the underworld named ”Skullo”, found his way to the world of living monsters and trying to escape from its guardians.",
-      "Compatible with Android devices"
-    ],
-    links: [
-      { l: "GitHub", href: "https://github.com/printto/Skullbreak" },
-      { l: "Demo APK", href: "https://drive.google.com/file/d/1yVI77LCXlcamWsP937JJvd31naVedZQ7/view?usp=sharing" }
-    ]
-  },
-  {
-    groups: ["games"],
-    title: "Meiji Jigsaw",
-    media: { type: "youtube", src: "https://youtube.com/embed/Q7VAQ5RXZvU" },
-    badges: [
-      { v: "ascript", l: "A-script" },
-      { v: "secondary", l: "Unity" }
-    ],
-    body: [
-      "Jigsaw game promoting Meiji Plus Vitamins B Complex Formula."
+      "dtac e-learning system.",
+      "Learn about communication system through games around Dataland.",
+      "Dataland contains video and games."
     ],
     links: [
       { l: "GitHub (private)", href: "#", off: true }
     ]
   },
   {
-    groups: ["apps"],
-    title: "Butterfly Garden",
-    media: { type: "youtube", src: "https://www.youtube.com/embed/wfJrWjUeLPM" },
+    groups: ["frontend"],
+    title: "Interboosters",
+    media: { type: "image", src: "img/projects/interboosters2.gif" },
     badges: [
       { v: "ascript", l: "A-script" },
-      { v: "secondary", l: "Unity3D" }
+      { v: "secondary", l: "HTML5" },
+      { v: "secondary", l: "CSS" },
+      { v: "secondary", l: "Javascript" }
     ],
     body: [
-      "<i>Paint and release buterflies!</i>",
-      "Create a beautiful butterfly image on a physical paper. Watch as your painted butterfly comes to life on the screen."
+      "Online Interboosters e-learning system.",
+      "Online English courses.",
+      "Contains videos and quizes."
     ],
     links: [
-      { l: "GitHub (private)", href: "#", off: true }
+      { l: "GitHub", href: "#", off: true },
+      { l: "Deployed Website", href: "https://ascriptwork.com/work/interboosters/" }
     ]
   },
   {
@@ -417,6 +326,40 @@ window.PROJECTS = [
     ]
   },
   {
+    groups: ["apps", "xr"],
+    title: "SCGP AR Placement",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/rAw_g3MzONM" },
+    badges: [
+      { v: "danger", l: "SCGP" },
+      { v: "secondary", l: "Unity3D" },
+      { v: "secondary", l: "AR" }
+    ],
+    body: [
+      "<i>See the booth before it is built</i>",
+      "Uses AR to visualise booth placement with SCGP products, at real-world scale."
+    ],
+    links: [
+      { l: "Watch demo", href: "https://youtube.com/shorts/rAw_g3MzONM" }
+    ]
+  },
+  {
+    groups: ["apps", "xr"],
+    title: "SCGP Clixpack AR",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/RZ2stTDvVsA" },
+    badges: [
+      { v: "danger", l: "SCGP" },
+      { v: "secondary", l: "Unity3D" },
+      { v: "secondary", l: "AR" }
+    ],
+    body: [
+      "Brings AR to SCGP Clixpack packaging.",
+      "The app carries campaigns, ads, and interactive coupons."
+    ],
+    links: [
+      { l: "Watch demo", href: "https://youtube.com/shorts/RZ2stTDvVsA" }
+    ]
+  },
+  {
     groups: ["apps"],
     title: "TPI Wall 3D Room",
     media: { type: "youtube", src: "https://youtube.com/embed/XQPKYLNCDvQ" },
@@ -432,6 +375,60 @@ window.PROJECTS = [
     links: [
       { l: "Google Play (not available)", href: "#", off: true },
       { l: "Appstore", href: "https://apps.apple.com/mn/app/tpi-360-degrees-room-tpi-3d/id1550256859" }
+    ]
+  },
+  {
+    groups: ["apps"],
+    title: "Butterfly Garden",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/wfJrWjUeLPM" },
+    badges: [
+      { v: "ascript", l: "A-script" },
+      { v: "secondary", l: "Unity3D" }
+    ],
+    body: [
+      "<i>Paint and release buterflies!</i>",
+      "Create a beautiful butterfly image on a physical paper. Watch as your painted butterfly comes to life on the screen."
+    ],
+    links: [
+      { l: "GitHub (private)", href: "#", off: true }
+    ]
+  },
+  {
+    groups: ["frontend"],
+    title: "PRINTmov Festival 2022",
+    media: { type: "image", src: "img/projects/printmov-festival.gif" },
+    badges: [
+      { v: "secondary", l: "Unity3D" },
+      { v: "secondary", l: "WebGL" },
+      { v: "secondary", l: "HTML5" },
+      { v: "secondary", l: "CSS" },
+      { v: "secondary", l: "Javascript" }
+    ],
+    body: [
+      "Website to celebrate PRINTmov Studio 11th Anniversary.",
+      "Take virtual tour in 3D around the festival area.",
+      "Downloads section also available on the website."
+    ],
+    links: [
+      { l: "GitHub (not available)", href: "#", off: true },
+      { l: "Deployed website", href: "https://printmov.com/" }
+    ]
+  },
+  {
+    groups: ["games"],
+    title: "InkIt - Kajaani Winter GameJam 2019",
+    media: { type: "youtube", src: "https://youtube.com/embed/wR9P_eidf2w" },
+    badges: [
+      { v: "success", l: "Game Jam" },
+      { v: "secondary", l: "Unity3D" }
+    ],
+    body: [
+      "Ink the way, get to the goal!",
+      "Start from white screen. Ink your way to the goal. Be careful not to InkIt too much or else you won't see the way!",
+      "This game is developed within 48 hours for Winter GameJam 2019 at Kajaani, Finland"
+    ],
+    links: [
+      { l: "GitHub", href: "https://github.com/printto/InkIt-Winter-GameJam-2019" }
     ]
   },
   {
@@ -472,101 +469,41 @@ window.PROJECTS = [
     ]
   },
   {
-    groups: ["apps", "backend"],
-    title: "Digi-Idle Ver.1",
-    media: { type: "youtube", src: "https://youtube.com/embed/cUI3_9q2O8w?start=60" },
+    groups: ["backend"],
+    title: "PRINTlish",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/59bYml5Qpz0" },
     badges: [
-      { v: "secondary", l: "Android Studio" },
-      { v: "secondary", l: "Kotlin" },
+      { v: "printmov", l: "PRINTmov" },
+      { v: "secondary", l: "Node.js" },
       { v: "secondary", l: "Firebase" }
     ],
     body: [
-      "Tamagotchi-style virtual pet with online database and battle system.",
-      "This project was created with Android Studio."
+      "<i>PRINTmov's Invented Language</i>",
+      "An updated 2025 version of the now-obsolete Printto-lang, which was released back in 2020.",
+      "The language was initially designed to be used with vocal-synth voicebanks that support Thai phonemes.",
+      "Type an English sentence into the translator website and it comes back as PRINTlish, keeping the same syllable count so it drops straight into vocal-synth lyric input.",
+      "Printto-lang was discontinued because converting between English and Printto-lang had no syllable count. PRINTlish was developed with syllable count in mind and has simplified grammar."
     ],
     links: [
-      { l: "GitHub", href: "https://github.com/printto/Digi_Idle" },
-      { l: "Digi-Idle Wiki", href: "http://digi-idle.fandom.com/" }
+      { l: "Deployed Website", href: "https://www.printmov.com/translate" }
     ]
   },
   {
-    groups: ["frontend"],
-    title: "dtac Dataland",
-    media: { type: "image", src: "img/projects/dtac2.png" },
+    groups: ["apps", "xr"],
+    title: "chARlie",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/KxoVxflMV84" },
     badges: [
       { v: "ascript", l: "A-script" },
-      { v: "secondary", l: "HTML5" },
-      { v: "secondary", l: "CSS" },
-      { v: "secondary", l: "Javascript" }
-    ],
-    body: [
-      "dtac e-learning system.",
-      "Learn about communication system through games around Dataland.",
-      "Dataland contains video and games."
-    ],
-    links: [
-      { l: "GitHub (private)", href: "#", off: true }
-    ]
-  },
-  {
-    groups: ["frontend"],
-    title: "Interboosters",
-    media: { type: "image", src: "img/projects/interboosters2.gif" },
-    badges: [
-      { v: "ascript", l: "A-script" },
-      { v: "secondary", l: "HTML5" },
-      { v: "secondary", l: "CSS" },
-      { v: "secondary", l: "Javascript" }
-    ],
-    body: [
-      "Online Interboosters e-learning system.",
-      "Online English courses.",
-      "Contains videos and quizes."
-    ],
-    links: [
-      { l: "GitHub", href: "#", off: true },
-      { l: "Deployed Website", href: "https://ascriptwork.com/work/interboosters/" }
-    ]
-  },
-  {
-    groups: ["frontend"],
-    title: "PRINTmov Festival 2022",
-    media: { type: "image", src: "img/projects/printmov-festival.gif" },
-    badges: [
       { v: "secondary", l: "Unity3D" },
-      { v: "secondary", l: "WebGL" },
-      { v: "secondary", l: "HTML5" },
-      { v: "secondary", l: "CSS" },
-      { v: "secondary", l: "Javascript" }
+      { v: "secondary", l: "AR Foundation" },
+      { v: "secondary", l: "iOS" }
     ],
     body: [
-      "Website to celebrate PRINTmov Studio 11th Anniversary.",
-      "Take virtual tour in 3D around the festival area.",
-      "Downloads section also available on the website."
+      "AR platform for mobile.",
+      "Create, edit and share your AR project within 1 app."
     ],
     links: [
-      { l: "GitHub (not available)", href: "#", off: true },
-      { l: "Deployed website", href: "https://printmov.com/" }
-    ]
-  },
-  {
-    groups: ["frontend"],
-    title: "Baxter - Introducing Three Chamber Bag Containing",
-    media: { type: "image", src: "img/projects/baxter-countdown.png" },
-    badges: [
-      { v: "ascript", l: "A-script" },
-      { v: "secondary", l: "HTML5" },
-      { v: "secondary", l: "CSS" },
-      { v: "secondary", l: "Javascript" },
-      { v: "secondary", l: "AR" }
-    ],
-    body: [
-      "Countdown to the product's introducing event date.",
-      "This website is used for camera filter. WebRTC is required."
-    ],
-    links: [
-      { l: "GitHub (private)", href: "#", off: true },
-      { l: "Deployed Website", href: "https://ascriptwork.com/work/countdown/" }
+      { l: "Appstore (not available)", href: "#", off: true }
     ]
   },
   {
@@ -591,39 +528,39 @@ window.PROJECTS = [
   },
   {
     groups: ["frontend"],
-    title: "Zilk Wallpaper",
-    media: { type: "youtube", src: "https://www.youtube.com/embed/DcyPg-4klZ8" },
+    title: "Baxter - Introducing Three Chamber Bag Containing",
+    media: { type: "image", src: "img/projects/baxter-countdown.png" },
     badges: [
       { v: "ascript", l: "A-script" },
       { v: "secondary", l: "HTML5" },
       { v: "secondary", l: "CSS" },
-      { v: "secondary", l: "Javascript" }
+      { v: "secondary", l: "Javascript" },
+      { v: "secondary", l: "AR" }
     ],
     body: [
-      "Your lucky wallpaper!",
-      "Generate wallpaper according to your birthdate."
+      "Countdown to the product's introducing event date.",
+      "This website is used for camera filter. WebRTC is required."
     ],
     links: [
       { l: "GitHub (private)", href: "#", off: true },
-      { l: "Deployed Website", href: "#", off: true }
+      { l: "Deployed Website", href: "https://ascriptwork.com/work/countdown/" }
     ]
   },
   {
-    groups: ["frontend"],
-    title: "REST Project",
-    media: { type: "image", src: "img/projects/REST.png" },
+    groups: ["apps", "frontend"],
+    title: "PRINTmov Splice",
+    media: { type: "image", src: "img/projects/printmov-splice.png" },
     badges: [
-      { v: "secondary", l: "HTML5" },
-      { v: "secondary", l: "CSS" },
-      { v: "secondary", l: "Javascript" }
+      { v: "printmov", l: "PRINTmov" },
+      { v: "secondary", l: "Vite" }
     ],
     body: [
-      "Working too hard or sitting for a long time can cause a serious health problem. REST is the chair designed to help people that face office syndrome problem.",
-      "The project consist of the front-end, back-end and hardware."
+      "<i>Edit video in your browser</i>",
+      "A lightweight multi-track video editor that exports at any resolution and frame rate.",
+      "Fully supports PRINTmov Motion projects."
     ],
     links: [
-      { l: "GitHub", href: "https://github.com/printto/project-exceed" },
-      { l: "eXceed Camp Wiki", href: "http://exceed.cpe.ku.ac.th/wiki/index.php/Exceed_14_Group_13" }
+      { l: "Try PRINTmov Splice", href: "https://www.printmov.com/web-video" }
     ]
   },
   {
@@ -655,125 +592,6 @@ window.PROJECTS = [
     links: [
       { l: "GitHub", href: "https://github.com/printto/ARSLONGA-Studio-Website" },
       { l: "Deployed Website", href: "https://arslonga-studio.com/" }
-    ]
-  },
-  {
-    groups: ["frontend"],
-    title: "Portrait Touch",
-    media: { type: "image", src: "img/projects/portrait.png" },
-    badges: [
-      { v: "secondary", l: "HTML5" },
-      { v: "secondary", l: "CSS" },
-      { v: "secondary", l: "Javascript" }
-    ],
-    body: [
-      "This website shows the profile of \"Portrait Touch\"'s art and graphics and also gives contact information."
-    ],
-    links: [
-      { l: "GitHub", href: "https://github.com/printto/Portrait-Touch-Website" },
-      { l: "Deployed Website", href: "http://www.portraittouch.com/" }
-    ]
-  },
-  {
-    groups: ["apps", "xr"],
-    title: "chARlie",
-    media: { type: "youtube", src: "https://www.youtube.com/embed/KxoVxflMV84" },
-    badges: [
-      { v: "ascript", l: "A-script" },
-      { v: "secondary", l: "Unity3D" },
-      { v: "secondary", l: "AR Foundation" },
-      { v: "secondary", l: "iOS" }
-    ],
-    body: [
-      "AR platform for mobile.",
-      "Create, edit and share your AR project within 1 app."
-    ],
-    links: [
-      { l: "Appstore (not available)", href: "#", off: true }
-    ]
-  },
-  {
-    groups: ["other"],
-    title: "Full-body Tracking Prototype",
-    media: { type: "youtube", src: "https://www.youtube.com/embed/kuU6cbhGmRc" },
-    badges: [
-      { v: "secondary", l: "Prototype" },
-      { v: "secondary", l: "Unity3D" },
-      { v: "secondary", l: "Computer Vision" }
-    ],
-    body: [
-      "<i>Motion capture without a suit</i>",
-      "Integrates OpenCV with Unity, mapping the tracked points onto a humanoid model."
-    ],
-    links: [
-      { l: "Watch demo", href: "https://youtu.be/kuU6cbhGmRc" }
-    ]
-  },
-  {
-    groups: ["xr"],
-    title: "SCG The Next Chapter",
-    media: { type: "youtube", src: "https://www.youtube.com/embed/yH3CEuOn7KA" },
-    badges: [
-      { v: "danger", l: "SCG Digital" },
-      { v: "secondary", l: "Unreal Engine" },
-      { v: "secondary", l: "Mixed Reality (MR)" }
-    ],
-    body: [
-      "An MR stage show that used chroma keying to blend reality with a virtual world.",
-      "The scene was controlled with a wooden cube, running Unreal Engine environments that ranged from full 3D sets to 360-degree spheres, or both at once."
-    ],
-    links: [
-      { l: "Watch demo", href: "https://youtu.be/yH3CEuOn7KA" }
-    ]
-  },
-  {
-    groups: ["apps", "xr"],
-    title: "SCGP AR Placement",
-    media: { type: "youtube", src: "https://www.youtube.com/embed/rAw_g3MzONM" },
-    badges: [
-      { v: "danger", l: "SCGP" },
-      { v: "secondary", l: "Unity3D" },
-      { v: "secondary", l: "AR" }
-    ],
-    body: [
-      "<i>See the booth before it is built</i>",
-      "Uses AR to visualise booth placement with SCGP products, at real-world scale."
-    ],
-    links: [
-      { l: "Watch demo", href: "https://youtube.com/shorts/rAw_g3MzONM" }
-    ]
-  },
-  {
-    groups: ["apps", "xr"],
-    title: "SCGP Clixpack AR",
-    media: { type: "youtube", src: "https://www.youtube.com/embed/RZ2stTDvVsA" },
-    badges: [
-      { v: "danger", l: "SCGP" },
-      { v: "secondary", l: "Unity3D" },
-      { v: "secondary", l: "AR" }
-    ],
-    body: [
-      "Brings AR to SCGP Clixpack packaging.",
-      "The app carries campaigns, ads, and interactive coupons."
-    ],
-    links: [
-      { l: "Watch demo", href: "https://youtube.com/shorts/RZ2stTDvVsA" }
-    ]
-  },
-  {
-    groups: ["other"],
-    title: "SCGC Aily",
-    media: { type: "youtube", src: "https://www.youtube.com/embed/wjQoBBFNMUk" },
-    badges: [
-      { v: "danger", l: "SCGC" },
-      { v: "secondary", l: "Unity3D" }
-    ],
-    body: [
-      "An animated avatar MC for SCGC's AI Day 2024, built with SCG's NLP lab.",
-      "Real-time 3D rendering and post-processing, driven by an NLU and TTS backend."
-    ],
-    links: [
-      { l: "Watch demo", href: "https://youtu.be/wjQoBBFNMUk" }
     ]
   },
   {
@@ -849,6 +667,157 @@ window.PROJECTS = [
     ]
   },
   {
+    groups: ["other"],
+    title: "SCGC Aily",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/wjQoBBFNMUk" },
+    badges: [
+      { v: "danger", l: "SCGC" },
+      { v: "secondary", l: "Unity3D" }
+    ],
+    body: [
+      "An animated avatar MC for SCGC's AI Day 2024, built with SCG's NLP lab.",
+      "Real-time 3D rendering and post-processing, driven by an NLU and TTS backend."
+    ],
+    links: [
+      { l: "Watch demo", href: "https://youtu.be/wjQoBBFNMUk" }
+    ]
+  },
+  {
+    groups: ["frontend"],
+    title: "Zilk Wallpaper",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/DcyPg-4klZ8" },
+    badges: [
+      { v: "ascript", l: "A-script" },
+      { v: "secondary", l: "HTML5" },
+      { v: "secondary", l: "CSS" },
+      { v: "secondary", l: "Javascript" }
+    ],
+    body: [
+      "Your lucky wallpaper!",
+      "Generate wallpaper according to your birthdate."
+    ],
+    links: [
+      { l: "GitHub (private)", href: "#", off: true },
+      { l: "Deployed Website", href: "#", off: true }
+    ]
+  },
+  {
+    groups: ["games"],
+    title: "Meiji Jigsaw",
+    media: { type: "youtube", src: "https://youtube.com/embed/Q7VAQ5RXZvU" },
+    badges: [
+      { v: "ascript", l: "A-script" },
+      { v: "secondary", l: "Unity" }
+    ],
+    body: [
+      "Jigsaw game promoting Meiji Plus Vitamins B Complex Formula."
+    ],
+    links: [
+      { l: "GitHub (private)", href: "#", off: true }
+    ]
+  },
+  {
+    groups: ["games"],
+    title: "Tiger - Run Athletics",
+    media: { type: "youtube", src: "https://youtube.com/embed/939OeVBmSEQ" },
+    badges: [
+      { v: "ascript", l: "A-script" },
+      { v: "secondary", l: "Unity3D" },
+      { v: "secondary", l: "Android" }
+    ],
+    body: [
+      "<i>Uncage Your Tiger</i>",
+      "Endless runner game promoting Tiger.",
+      "Avoid all the obstacles."
+    ]
+  },
+  {
+    groups: ["games", "xr"],
+    title: "ARGhost",
+    media: { type: "youtube", src: "https://youtube.com/embed/4bP1rvzgHeA" },
+    badges: [
+      { v: "secondary", l: "Unity3D" },
+      { v: "secondary", l: "AR" }
+    ],
+    body: [
+      "A mobile augmented-reality survival horror game which simulates real ghost experiences and beating the other players’ scores from all around the world",
+      "Calculate playing space at runtime. Use real-life physical card to repel AR virtual ghosts!"
+    ],
+    links: [
+      { l: "CPE Project Archive", href: "https://ecourse.cpe.ku.ac.th/projar/project/details/1450/" },
+      { l: "GitHub", href: "https://github.com/masty123/ARGHOST" }
+    ]
+  },
+  {
+    groups: ["games"],
+    title: "The Dawn of the Epic Legend of the Tales of the Legendary Power Mage: The Reckoning",
+    media: { type: "youtube", src: "https://youtube.com/embed/BggA0cktmCM" },
+    badges: [
+      { v: "secondary", l: "Unity3D" }
+    ],
+    body: [
+      "The Dawn of the Epic Legend of the Tales of the Legendary Power Mage: The Reckoning is a fast-paced single-player 3D game for PC where you play as a powerful wizard in a magic castle, fight enemies to collect score and seek crystals to customize your spells."
+    ],
+    links: [
+      { l: "Available on Itch.io", href: "https://ukkosstruck.itch.io/power-mage" },
+      { l: "GitHub", href: "https://github.com/Sumpp1/powermage" }
+    ]
+  },
+  {
+    groups: ["games"],
+    title: "ParallelBro",
+    media: { type: "image", src: "img/projects/parallelbro.gif" },
+    badges: [
+      { v: "secondary", l: "Unity2D" },
+      { v: "secondary", l: "Online Multi-player" },
+      { v: "secondary", l: "Photon" }
+    ],
+    body: [
+      "Can you save the 2 world?",
+      "Help each other to solve the puzzle! 2 players across the network.",
+      "Compatible with Android devices"
+    ],
+    links: [
+      { l: "GitHub", href: "https://github.com/masty123/ParallelBro/tree/master" }
+    ]
+  },
+  {
+    groups: ["apps", "backend"],
+    title: "Digi-Idle Ver.1",
+    media: { type: "youtube", src: "https://youtube.com/embed/cUI3_9q2O8w?start=60" },
+    badges: [
+      { v: "secondary", l: "Android Studio" },
+      { v: "secondary", l: "Kotlin" },
+      { v: "secondary", l: "Firebase" }
+    ],
+    body: [
+      "Tamagotchi-style virtual pet with online database and battle system.",
+      "This project was created with Android Studio."
+    ],
+    links: [
+      { l: "GitHub", href: "https://github.com/printto/Digi_Idle" },
+      { l: "Digi-Idle Wiki", href: "http://digi-idle.fandom.com/" }
+    ]
+  },
+  {
+    groups: ["games"],
+    title: "Skullbreak",
+    media: { type: "youtube", src: "https://youtube.com/embed/kz2mH1xPeVI" },
+    badges: [
+      { v: "secondary", l: "Unity3D" },
+      { v: "secondary", l: "Android" }
+    ],
+    body: [
+      "Endless runner project",
+      "In the game a death monster from the underworld named ”Skullo”, found his way to the world of living monsters and trying to escape from its guardians.",
+      "Compatible with Android devices"
+    ],
+    links: [
+      { l: "GitHub", href: "https://github.com/printto/Skullbreak" },
+      { l: "Demo APK", href: "https://drive.google.com/file/d/1yVI77LCXlcamWsP937JJvd31naVedZQ7/view?usp=sharing" }
+    ]
+  },
+  {
     groups: ["backend"],
     title: "SixerDev - Boardgame Store",
     media: { type: "image", src: "img/projects/SixerDev.png" },
@@ -870,23 +839,54 @@ window.PROJECTS = [
     ]
   },
   {
-    groups: ["backend"],
-    title: "PRINTlish",
-    media: { type: "youtube", src: "https://www.youtube.com/embed/59bYml5Qpz0" },
+    groups: ["frontend"],
+    title: "REST Project",
+    media: { type: "image", src: "img/projects/REST.png" },
     badges: [
-      { v: "printmov", l: "PRINTmov" },
-      { v: "secondary", l: "Node.js" },
-      { v: "secondary", l: "Firebase" }
+      { v: "secondary", l: "HTML5" },
+      { v: "secondary", l: "CSS" },
+      { v: "secondary", l: "Javascript" }
     ],
     body: [
-      "<i>PRINTmov's Invented Language</i>",
-      "An updated 2025 version of the now-obsolete Printto-lang, which was released back in 2020.",
-      "The language was initially designed to be used with vocal-synth voicebanks that support Thai phonemes.",
-      "Type an English sentence into the translator website and it comes back as PRINTlish, keeping the same syllable count so it drops straight into vocal-synth lyric input.",
-      "Printto-lang was discontinued because converting between English and Printto-lang had no syllable count. PRINTlish was developed with syllable count in mind and has simplified grammar."
+      "Working too hard or sitting for a long time can cause a serious health problem. REST is the chair designed to help people that face office syndrome problem.",
+      "The project consist of the front-end, back-end and hardware."
     ],
     links: [
-      { l: "Deployed Website", href: "https://www.printmov.com/translate" }
+      { l: "GitHub", href: "https://github.com/printto/project-exceed" },
+      { l: "eXceed Camp Wiki", href: "http://exceed.cpe.ku.ac.th/wiki/index.php/Exceed_14_Group_13" }
+    ]
+  },
+  {
+    groups: ["frontend"],
+    title: "Portrait Touch",
+    media: { type: "image", src: "img/projects/portrait.png" },
+    badges: [
+      { v: "secondary", l: "HTML5" },
+      { v: "secondary", l: "CSS" },
+      { v: "secondary", l: "Javascript" }
+    ],
+    body: [
+      "This website shows the profile of \"Portrait Touch\"'s art and graphics and also gives contact information."
+    ],
+    links: [
+      { l: "GitHub", href: "https://github.com/printto/Portrait-Touch-Website" },
+      { l: "Deployed Website", href: "http://www.portraittouch.com/" }
+    ]
+  },
+  {
+    groups: ["games", "xr"],
+    title: "Vrive",
+    media: { type: "image", src: "img/projects/vrive.png" },
+    badges: [
+      { v: "secondary", l: "Unity3D" },
+      { v: "secondary", l: "VR" }
+    ],
+    body: [
+      "VR driving project",
+      "Driving project made with Unity3D. Simulates driving in VR with fully controls from VR controllers."
+    ],
+    links: [
+      { l: "GitHub", href: "https://github.com/ziveso/Vrive" }
     ]
   }
 ];
