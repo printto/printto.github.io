@@ -196,14 +196,4 @@
   });
 
   apply("all");
-
-  function markScrollable() {
-    Array.prototype.forEach.call(mount.querySelectorAll(".card-desc"), function (d) {
-      d.classList.toggle("is-scrollable", d.scrollHeight > d.clientHeight + 1);
-    });
-  }
-
-  markScrollable();
-  window.addEventListener("resize", markScrollable);
-  window.addEventListener("load", markScrollable);
 })();

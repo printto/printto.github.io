@@ -117,16 +117,12 @@ body {
 }
 
 .card-desc {
-  flex: 0 0 auto;
-  max-height: 150px;
+  flex: 1 1 150px;
+  min-height: 0;
   overflow-y: auto;
   padding-right: 6px;
   scrollbar-width: thin;
   scrollbar-color: #6a6a6a transparent;
-}
-
-.card-desc.is-scrollable {
-  overscroll-behavior: contain;
 }
 
 .card-desc > p:last-child {
