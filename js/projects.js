@@ -55,10 +55,100 @@ window.PROJECTS = [
     ]
   },
   {
+    groups: ["apps", "frontend"],
+    title: "PRINTmov Vocal",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/oMUXAV_Izx8" },
+    badges: [
+      { v: "printmov", l: "PRINTmov" },
+      { v: "secondary", l: "DiffSinger" },
+      { v: "secondary", l: "WebGPU" }
+    ],
+    body: [
+      "<i>Sing in the browser</i>",
+      "A vocal synthesizer running DiffSinger models right in the browser, accelerated by WebGPU.",
+      "No server rendering, no installation."
+    ],
+    links: [
+      { l: "Use PRINTmov Vocal", href: "https://www.printmov.com/web-synth" },
+      { l: "Watch demo", href: "https://www.youtube.com/watch?v=T40HI5h5Qpg" }
+    ]
+  },
+  {
+    groups: ["apps", "frontend"],
+    title: "PRINTmov Speak",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/GmB4Y0MjiGI" },
+    badges: [
+      { v: "printmov", l: "PRINTmov" },
+      { v: "secondary", l: "Text-to-Speech" }
+    ],
+    body: [
+      "<i>Type it, hear it</i>",
+      "A speech synthesis tool that speaks any text in the voices of PRINTmov characters."
+    ],
+    links: [
+      { l: "Try PRINTmov Speak", href: "https://www.printmov.com/tts.html" }
+    ]
+  },
+  {
+    groups: ["apps", "frontend"],
+    title: "PRINTmov Motion",
+    media: { type: "image", src: "img/projects/printmov-motion.png" },
+    badges: [
+      { v: "printmov", l: "PRINTmov" },
+      { v: "secondary", l: "Three.js" },
+      { v: "secondary", l: "Vite" }
+    ],
+    body: [
+      "<i>Drag-and-drop PV editor</i>",
+      "Arrange dances and camera shots, sync vocals, and export finished videos.",
+      "Runs entirely in the browser."
+    ],
+    links: [
+      { l: "Try PRINTmov Motion", href: "https://www.printmov.com/web-motion" },
+      { l: "Watch demo", href: "https://www.youtube.com/watch?v=nzym4Ue17xM" }
+    ]
+  },
+  {
+    groups: ["apps"],
+    title: "OpenUtau PRINTmov",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/5mly2m85rBc" },
+    badges: [
+      { v: "printmov", l: "PRINTmov" },
+      { v: "secondary", l: "Open Source" }
+    ],
+    body: [
+      "<i>Vocal synthesis for everyone</i>",
+      "An OpenUtau fork built around PRINTmov's use cases, with Thai language support.",
+      "Beginner-friendly and fully compatible with PRINTmov singers."
+    ],
+    links: [
+      { l: "GitHub", href: "https://github.com/printto/OpenUtau/tree/printmov-build" },
+      { l: "Watch demo", href: "https://www.youtube.com/watch?v=8Kscr2YT-xk" }
+    ]
+  },
+  {
+    groups: ["apps", "frontend"],
+    title: "PRINTmov Splice",
+    media: { type: "image", src: "img/projects/printmov-splice.png" },
+    badges: [
+      { v: "printmov", l: "PRINTmov" },
+      { v: "secondary", l: "Vite" }
+    ],
+    body: [
+      "<i>Edit video in your browser</i>",
+      "A lightweight multi-track video editor that exports at any resolution and frame rate.",
+      "Fully supports PRINTmov Motion projects."
+    ],
+    links: [
+      { l: "Try PRINTmov Splice", href: "https://www.printmov.com/web-video" }
+    ]
+  },
+  {
     groups: ["games"],
     title: "Uptown Outbreak",
     media: { type: "youtube", src: "https://www.youtube.com/embed/Zw4_arRSCbQ" },
     badges: [
+      { v: "printmov", l: "PRINTmov" },
       { v: "secondary", l: "Unity3D" },
       { v: "secondary", l: "Available on Steam" }
     ],
@@ -77,7 +167,7 @@ window.PROJECTS = [
     title: "Toyota Road Safety Game",
     media: { type: "youtube", src: "https://www.youtube.com/embed/orpI0Ol93YA" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "Unity3D" },
       { v: "secondary", l: "WebGL" },
       { v: "secondary", l: "Android" },
@@ -98,7 +188,7 @@ window.PROJECTS = [
     title: "Kubota i-Gen",
     media: { type: "youtube", src: "https://youtube.com/embed/40qvxWhH3IY" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "Unity" },
       { v: "secondary", l: "Android" },
       { v: "secondary", l: "iOS" },
@@ -119,7 +209,7 @@ window.PROJECTS = [
     title: "Yamaha Virtual Event 2021",
     media: { type: "youtube", src: "https://youtube.com/embed/e27H_7bnl64" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "Unity3D" },
       { v: "secondary", l: "WebGL" }
     ],
@@ -136,7 +226,7 @@ window.PROJECTS = [
     title: "Tiger - Run Athletics",
     media: { type: "youtube", src: "https://youtube.com/embed/939OeVBmSEQ" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "Unity3D" },
       { v: "secondary", l: "Android" }
     ],
@@ -252,7 +342,7 @@ window.PROJECTS = [
     title: "Meiji Jigsaw",
     media: { type: "youtube", src: "https://youtube.com/embed/Q7VAQ5RXZvU" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "Unity" }
     ],
     body: [
@@ -268,7 +358,7 @@ window.PROJECTS = [
     title: "Butterfly Garden",
     media: { type: "youtube", src: "https://www.youtube.com/embed/wfJrWjUeLPM" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "Unity3D" }
     ],
     body: [
@@ -284,7 +374,7 @@ window.PROJECTS = [
     title: "BLA Photo Booth",
     media: { type: "youtube", src: "https://youtube.com/embed/Fx-JEXiwpvY" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "Unity" }
     ],
     body: [
@@ -300,7 +390,7 @@ window.PROJECTS = [
     title: "TPI Wall 3D Room",
     media: { type: "youtube", src: "https://youtube.com/embed/XQPKYLNCDvQ" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "Unity3D" },
       { v: "secondary", l: "Android" },
       { v: "secondary", l: "iOS" }
@@ -318,6 +408,7 @@ window.PROJECTS = [
     title: "UTANITY Synth Party 2025",
     media: { type: "youtube", src: "https://www.youtube.com/embed/OwRy4RT8oxQ" },
     badges: [
+      { v: "printmov", l: "PRINTmov" },
       { v: "secondary", l: "Unity3D" },
       { v: "secondary", l: "WebGL" }
     ],
@@ -334,6 +425,7 @@ window.PROJECTS = [
     title: "UTANITY Synth Party 2022",
     media: { type: "youtube", src: "https://www.youtube.com/embed/zKv3CrRSApQ" },
     badges: [
+      { v: "printmov", l: "PRINTmov" },
       { v: "secondary", l: "Unity3D" },
       { v: "secondary", l: "WebGL" }
     ],
@@ -389,7 +481,7 @@ window.PROJECTS = [
     title: "dtac Dataland",
     media: { type: "image", src: "img/projects/dtac2.png" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "HTML5" },
       { v: "secondary", l: "CSS" },
       { v: "secondary", l: "Javascript" }
@@ -408,7 +500,7 @@ window.PROJECTS = [
     title: "Interboosters",
     media: { type: "image", src: "img/projects/interboosters2.gif" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "HTML5" },
       { v: "secondary", l: "CSS" },
       { v: "secondary", l: "Javascript" }
@@ -449,7 +541,7 @@ window.PROJECTS = [
     title: "Baxter - Introducing Three Chamber Bag Containing",
     media: { type: "image", src: "img/projects/baxter-countdown.png" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "HTML5" },
       { v: "secondary", l: "CSS" },
       { v: "secondary", l: "Javascript" },
@@ -469,7 +561,7 @@ window.PROJECTS = [
     title: "Dr.Jill - AR Filter Website",
     media: { type: "image", src: "img/projects/drjill.png" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "HTML5" },
       { v: "secondary", l: "CSS" },
       { v: "secondary", l: "Javascript" },
@@ -489,7 +581,7 @@ window.PROJECTS = [
     title: "Zilk Wallpaper",
     media: { type: "youtube", src: "https://www.youtube.com/embed/DcyPg-4klZ8" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "HTML5" },
       { v: "secondary", l: "CSS" },
       { v: "secondary", l: "Javascript" }
@@ -575,7 +667,7 @@ window.PROJECTS = [
     title: "chARlie",
     media: { type: "youtube", src: "https://www.youtube.com/embed/KxoVxflMV84" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "Unity3D" },
       { v: "secondary", l: "AR Foundation" },
       { v: "secondary", l: "iOS" }
@@ -593,7 +685,7 @@ window.PROJECTS = [
     title: "Coca-Cola No Sugar AR",
     media: { type: "youtube", src: "https://youtube.com/embed/GePPqQVjWKI" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "Spark AR" },
       { v: "secondary", l: "Facebook" },
       { v: "secondary", l: "Instagram" }
@@ -611,7 +703,7 @@ window.PROJECTS = [
     title: "Pomelo - Bugs Bunny AR",
     media: { type: "youtube", src: "https://youtube.com/embed/hoorefNZdMM" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "Spark AR" },
       { v: "secondary", l: "Facebook" },
       { v: "secondary", l: "Instagram" }
@@ -629,7 +721,7 @@ window.PROJECTS = [
     title: "Tom and Jerry Blink Race AR",
     media: { type: "youtube", src: "https://www.youtube.com/embed/uTbSzx0_jyo" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "Spark AR" },
       { v: "secondary", l: "Facebook" },
       { v: "secondary", l: "Instagram" }
@@ -647,7 +739,7 @@ window.PROJECTS = [
     title: "Milo Game AR",
     media: { type: "youtube", src: "https://youtube.com/embed/-kj1Nt4TZT0" },
     badges: [
-      { v: "primary", l: "A-script" },
+      { v: "ascript", l: "A-script" },
       { v: "secondary", l: "Spark AR" },
       { v: "secondary", l: "Facebook" },
       { v: "secondary", l: "Instagram" }
@@ -685,10 +777,11 @@ window.PROJECTS = [
   {
     groups: ["backend"],
     title: "PRINTlish",
-    media: { type: "image", src: "img/projects/translate.png" },
+    media: { type: "youtube", src: "https://www.youtube.com/embed/59bYml5Qpz0" },
     badges: [
+      { v: "printmov", l: "PRINTmov" },
       { v: "secondary", l: "Node.js" },
-      { v: "secondary", l: "MongoDB" }
+      { v: "secondary", l: "Firebase" }
     ],
     body: [
       "<i>PRINTmov's Invented Language</i>",

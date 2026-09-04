@@ -92,7 +92,7 @@
     if (/youtube\.com/.test(href) || /youtube/.test(label)) return "youtube";
     if (/ar filter|facebook ar|spark ar/.test(label)) return "filters";
     if (/wiki|article|archive|facebook\.com/.test(href + " " + label)) return "article";
-    if (/website|deployed|play on browser|play in browser/.test(label)) return "globe";
+    if (/website|deployed|play on browser|play in browser|^(try|use) /.test(label)) return "globe";
     return "link";
   }
 
@@ -196,4 +196,14 @@
   });
 
   apply("all");
+
+  function markScrollable() {
+    Array.prototype.forEach.call(mount.querySelectorAll(".card-desc"), function (d) {
+      d.classList.toggle("is-scrollable", d.scrollHeight > d.clientHeight + 1);
+    });
+  }
+
+  markScrollable();
+  window.addEventListener("resize", markScrollable);
+  window.addEventListener("load", markScrollable);
 })();
