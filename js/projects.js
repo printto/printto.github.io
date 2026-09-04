@@ -1,5 +1,4 @@
 window.PROJECTS = [
-
   {
     groups: ["apps", "frontend"],
     title: "Weshape",
@@ -70,6 +69,22 @@ window.PROJECTS = [
     ],
     links: [
       { l: "Website", href: "https://cengine-render.github.io/" }
+    ]
+  },
+  {
+    groups: ["apps", "frontend", "backend"],
+    title: "CENGINE Remote",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/-7uRgaLbpqI" },
+    badges: [
+      { v: "secondary", l: "Node.js" },
+      { v: "secondary", l: "WebSocket" }
+    ],
+    body: [
+      "A companion to CENGINE Car Rendering that drives the render from a mobile web browser.",
+      "Connects wirelessly, with no app to install."
+    ],
+    links: [
+      { l: "Watch demo", href: "https://youtube.com/shorts/-7uRgaLbpqI" }
     ]
   },
   {
@@ -179,7 +194,6 @@ window.PROJECTS = [
       { l: "Available on Steam", href: "https://store.steampowered.com/app/2486620/Uptown_Outbreak/" }
     ]
   },
-
   {
     groups: ["games"],
     title: "Toyota Road Safety Game",
@@ -370,7 +384,6 @@ window.PROJECTS = [
       { l: "GitHub (private)", href: "#", off: true }
     ]
   },
-
   {
     groups: ["apps"],
     title: "Butterfly Garden",
@@ -474,26 +487,6 @@ window.PROJECTS = [
       { l: "Digi-Idle Wiki", href: "http://digi-idle.fandom.com/" }
     ]
   },
-  {
-    groups: ["apps"],
-    title: "THAL - Thai Artist List",
-    media: { type: "images", srcs: ["img/projects/thal1.jpg", "img/projects/thal2.jpg"] },
-    badges: [
-      { v: "secondary", l: "Android Studio" },
-      { v: "secondary", l: "Kotlin" },
-      { v: "secondary", l: "JSON" }
-    ],
-    body: [
-      "Application that gathers Thai artists' informations as a list.",
-      "Users can search for artist's name or art type of the artist.",
-      "This application is just to practice implementing custom adapter.",
-      "JSON files are hosted on <a href=\"https://www.printmov.com/THAL/artist.json\">printmov.com/THAL</a>."
-    ],
-    links: [
-      { l: "GitHub", href: "https://github.com/printto/THAL_Thai-Artist-List" }
-    ]
-  },
-
   {
     groups: ["frontend"],
     title: "dtac Dataland",
@@ -679,7 +672,6 @@ window.PROJECTS = [
       { l: "Deployed Website", href: "http://www.portraittouch.com/" }
     ]
   },
-
   {
     groups: ["apps", "xr"],
     title: "chARlie",
@@ -696,6 +688,90 @@ window.PROJECTS = [
     ],
     links: [
       { l: "Appstore (not available)", href: "#", off: true }
+    ]
+  },
+  {
+    groups: ["other"],
+    title: "Full-body Tracking Prototype",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/kuU6cbhGmRc" },
+    badges: [
+      { v: "secondary", l: "Prototype" },
+      { v: "secondary", l: "Unity3D" },
+      { v: "secondary", l: "Computer Vision" }
+    ],
+    body: [
+      "<i>Motion capture without a suit</i>",
+      "Integrates OpenCV with Unity, mapping the tracked points onto a humanoid model."
+    ],
+    links: [
+      { l: "Watch demo", href: "https://youtu.be/kuU6cbhGmRc" }
+    ]
+  },
+  {
+    groups: ["xr"],
+    title: "SCG The Next Chapter",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/yH3CEuOn7KA" },
+    badges: [
+      { v: "danger", l: "SCG Digital" },
+      { v: "secondary", l: "Unreal Engine" },
+      { v: "secondary", l: "Mixed Reality (MR)" }
+    ],
+    body: [
+      "An MR stage show that used chroma keying to blend reality with a virtual world.",
+      "The scene was controlled with a wooden cube, running Unreal Engine environments that ranged from full 3D sets to 360-degree spheres, or both at once."
+    ],
+    links: [
+      { l: "Watch demo", href: "https://youtu.be/yH3CEuOn7KA" }
+    ]
+  },
+  {
+    groups: ["apps", "xr"],
+    title: "SCGP AR Placement",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/rAw_g3MzONM" },
+    badges: [
+      { v: "danger", l: "SCGP" },
+      { v: "secondary", l: "Unity3D" },
+      { v: "secondary", l: "AR" }
+    ],
+    body: [
+      "<i>See the booth before it is built</i>",
+      "Uses AR to visualise booth placement with SCGP products, at real-world scale."
+    ],
+    links: [
+      { l: "Watch demo", href: "https://youtube.com/shorts/rAw_g3MzONM" }
+    ]
+  },
+  {
+    groups: ["apps", "xr"],
+    title: "SCGP Clixpack AR",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/RZ2stTDvVsA" },
+    badges: [
+      { v: "danger", l: "SCGP" },
+      { v: "secondary", l: "Unity3D" },
+      { v: "secondary", l: "AR" }
+    ],
+    body: [
+      "Brings AR to SCGP Clixpack packaging.",
+      "The app carries campaigns, ads, and interactive coupons."
+    ],
+    links: [
+      { l: "Watch demo", href: "https://youtube.com/shorts/RZ2stTDvVsA" }
+    ]
+  },
+  {
+    groups: ["other"],
+    title: "SCGC Aily",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/wjQoBBFNMUk" },
+    badges: [
+      { v: "danger", l: "SCGC" },
+      { v: "secondary", l: "Unity3D" }
+    ],
+    body: [
+      "An animated avatar MC for SCGC's AI Day 2024, built with SCG's NLP lab.",
+      "Real-time 3D rendering and post-processing, driven by an NLU and TTS backend."
+    ],
+    links: [
+      { l: "Watch demo", href: "https://youtu.be/wjQoBBFNMUk" }
     ]
   },
   {
@@ -770,7 +846,6 @@ window.PROJECTS = [
       { l: "Facebook AR (not available)", href: "#", off: true }
     ]
   },
-
   {
     groups: ["backend"],
     title: "SixerDev - Boardgame Store",
@@ -819,5 +894,6 @@ window.PROJECT_CATEGORIES = [
   { group: "apps", label: "Application" },
   { group: "frontend", label: "Front-end" },
   { group: "xr", label: "XR" },
-  { group: "backend", label: "Back-end" }
+  { group: "backend", label: "Back-end" },
+  { group: "other", label: "Other" }
 ];

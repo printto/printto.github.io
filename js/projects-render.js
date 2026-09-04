@@ -89,7 +89,7 @@
     if (/play\.google\.com/.test(href) || /google play/.test(label)) return "playstore";
     if (/apps\.apple\.com/.test(href) || /appstore|app store/.test(label)) return "appstore";
     if (/drive\.google\.com/.test(href) || /apk|download/.test(label)) return "download";
-    if (/youtube\.com/.test(href) || /youtube/.test(label)) return "youtube";
+    if (/youtube\.com|youtu\.be/.test(href) || /youtube/.test(label)) return "youtube";
     if (/ar filter|facebook ar|spark ar/.test(label)) return "filters";
     if (/wiki|article|archive|facebook\.com/.test(href + " " + label)) return "article";
     if (/website|deployed|play on browser|play in browser|^(try|use) /.test(label)) return "globe";
