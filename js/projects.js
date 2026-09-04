@@ -28,7 +28,7 @@ window.PROJECTS = [
     body: [
       "<i>Winner of 1-Bit Jam #2</i>",
       "Concept: Only 2 colors at a time.",
-      "Theme: Starts with everything, ends wth nothing."
+      "Theme: Starts with everything, ends with nothing."
     ],
     links: [
       { l: "Submission Page", href: "https://itch.io/jam/1-bit-jam-n2/rate/2367178" },
@@ -310,7 +310,7 @@ window.PROJECTS = [
     ],
     body: [
       "Ink the way, get to the goal!",
-      "Start from white screen. Ink your way to the goal. Becareful not to InkIt too much or else you won't see the way!",
+      "Start from white screen. Ink your way to the goal. Be careful not to InkIt too much or else you won't see the way!",
       "This game is developed within 48 hours for Winter GameJam 2019 at Kajaani, Finland"
     ],
     links: [
@@ -650,7 +650,7 @@ window.PROJECTS = [
       { v: "secondary", l: "CSS" }
     ],
     body: [
-      "This website shows the profile of \"ARSLONGA Studio\"'s school courses and also gives contract informations."
+      "This website shows the profile of \"ARSLONGA Studio\"'s school courses and also gives contact information."
     ],
     links: [
       { l: "GitHub", href: "https://github.com/printto/ARSLONGA-Studio-Website" },
@@ -667,7 +667,7 @@ window.PROJECTS = [
       { v: "secondary", l: "Javascript" }
     ],
     body: [
-      "This website shows the profile of \"Portrait Touch\"'s art and graphics and also gives contract informations."
+      "This website shows the profile of \"Portrait Touch\"'s art and graphics and also gives contact information."
     ],
     links: [
       { l: "GitHub", href: "https://github.com/printto/Portrait-Touch-Website" },
