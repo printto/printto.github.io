@@ -54,7 +54,7 @@ window.PROJECTS = [
     ]
   },
   {
-    groups: ["frontend", "apps"],
+    groups: ["apps"],
     title: "CENGINE",
     media: { type: "youtube", src: "https://www.youtube.com/embed/f5JH_weCk1g" },
     badges: [
@@ -161,7 +161,7 @@ window.PROJECTS = [
     ]
   },
   {
-    groups: ["apps", "frontend"],
+    groups: ["apps", "frontend", "backend"],
     title: "PRINTmov Speak",
     media: { type: "youtube", src: "https://www.youtube.com/embed/GmB4Y0MjiGI" },
     badges: [
@@ -435,13 +435,15 @@ window.PROJECTS = [
     ]
   },
   {
-    groups: ["apps"],
+    groups: ["apps", "backend"],
     title: "UTANITY Synth Party 2025",
     media: { type: "youtube", src: "https://www.youtube.com/embed/OwRy4RT8oxQ" },
     badges: [
       { v: "printmov", l: "PRINTmov" },
       { v: "secondary", l: "Unity3D" },
-      { v: "secondary", l: "WebGL" }
+      { v: "secondary", l: "WebGL" },
+      { v: "secondary", l: "Node.js" },
+      { v: "secondary", l: "WebSocket" }
     ],
     body: [
       "<i>Real-time Virtual Singers Concert!</i>",
@@ -470,7 +472,7 @@ window.PROJECTS = [
     ]
   },
   {
-    groups: ["apps"],
+    groups: ["apps", "backend"],
     title: "Digi-Idle Ver.1",
     media: { type: "youtube", src: "https://youtube.com/embed/cUI3_9q2O8w?start=60" },
     badges: [
@@ -479,8 +481,8 @@ window.PROJECTS = [
       { v: "secondary", l: "Firebase" }
     ],
     body: [
-      "Tamagotchi-style vertual pet with online database and battle system.",
-      "This project was created with Android studio."
+      "Tamagotchi-style virtual pet with online database and battle system.",
+      "This project was created with Android Studio."
     ],
     links: [
       { l: "GitHub", href: "https://github.com/printto/Digi_Idle" },
