@@ -55,6 +55,24 @@ window.PROJECTS = [
     ]
   },
   {
+    groups: ["frontend", "apps"],
+    title: "CENGINE",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/f5JH_weCk1g" },
+    badges: [
+      { v: "secondary", l: "Unity3D" },
+      { v: "secondary", l: "Real-time Rendering" },
+      { v: "secondary", l: "AI Rendering" }
+    ],
+    body: [
+      "<i>Interactive car rendering solutions</i>",
+      "Real-time 3D car customisation of parts, colours, wheels and scenes, for brands and workshops.",
+      "Includes an AI quick-preview that restyles a real car from a single photo."
+    ],
+    links: [
+      { l: "Website", href: "https://cengine-render.github.io/" }
+    ]
+  },
+  {
     groups: ["apps", "frontend"],
     title: "PRINTmov Vocal",
     media: { type: "youtube", src: "https://www.youtube.com/embed/oMUXAV_Izx8" },
@@ -71,41 +89,6 @@ window.PROJECTS = [
     links: [
       { l: "Use PRINTmov Vocal", href: "https://www.printmov.com/web-synth" },
       { l: "Watch demo", href: "https://www.youtube.com/watch?v=T40HI5h5Qpg" }
-    ]
-  },
-  {
-    groups: ["apps", "frontend"],
-    title: "PRINTmov Speak",
-    media: { type: "youtube", src: "https://www.youtube.com/embed/GmB4Y0MjiGI" },
-    badges: [
-      { v: "printmov", l: "PRINTmov" },
-      { v: "secondary", l: "Text-to-Speech" }
-    ],
-    body: [
-      "<i>Type it, hear it</i>",
-      "A speech synthesis tool that speaks any text in the voices of PRINTmov characters."
-    ],
-    links: [
-      { l: "Try PRINTmov Speak", href: "https://www.printmov.com/tts.html" }
-    ]
-  },
-  {
-    groups: ["apps", "frontend"],
-    title: "PRINTmov Motion",
-    media: { type: "image", src: "img/projects/printmov-motion.png" },
-    badges: [
-      { v: "printmov", l: "PRINTmov" },
-      { v: "secondary", l: "Three.js" },
-      { v: "secondary", l: "Vite" }
-    ],
-    body: [
-      "<i>Drag-and-drop PV editor</i>",
-      "Arrange dances and camera shots, sync vocals, and export finished videos.",
-      "Runs entirely in the browser."
-    ],
-    links: [
-      { l: "Try PRINTmov Motion", href: "https://www.printmov.com/web-motion" },
-      { l: "Watch demo", href: "https://www.youtube.com/watch?v=nzym4Ue17xM" }
     ]
   },
   {
@@ -128,6 +111,25 @@ window.PROJECTS = [
   },
   {
     groups: ["apps", "frontend"],
+    title: "PRINTmov Motion",
+    media: { type: "image", src: "img/projects/printmov-motion.png" },
+    badges: [
+      { v: "printmov", l: "PRINTmov" },
+      { v: "secondary", l: "Three.js" },
+      { v: "secondary", l: "Vite" }
+    ],
+    body: [
+      "<i>Drag-and-drop PV editor</i>",
+      "Arrange dances and camera shots, sync vocals, and export finished videos.",
+      "Runs entirely in the browser."
+    ],
+    links: [
+      { l: "Try PRINTmov Motion", href: "https://www.printmov.com/web-motion" },
+      { l: "Watch demo", href: "https://www.youtube.com/watch?v=nzym4Ue17xM" }
+    ]
+  },
+  {
+    groups: ["apps", "frontend"],
     title: "PRINTmov Splice",
     media: { type: "image", src: "img/projects/printmov-splice.png" },
     badges: [
@@ -141,6 +143,22 @@ window.PROJECTS = [
     ],
     links: [
       { l: "Try PRINTmov Splice", href: "https://www.printmov.com/web-video" }
+    ]
+  },
+  {
+    groups: ["apps", "frontend"],
+    title: "PRINTmov Speak",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/GmB4Y0MjiGI" },
+    badges: [
+      { v: "printmov", l: "PRINTmov" },
+      { v: "secondary", l: "Text-to-Speech" }
+    ],
+    body: [
+      "<i>Type it, hear it</i>",
+      "A speech synthesis tool that speaks any text in the voices of PRINTmov characters."
+    ],
+    links: [
+      { l: "Try PRINTmov Speak", href: "https://www.printmov.com/tts.html" }
     ]
   },
   {
