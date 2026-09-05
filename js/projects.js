@@ -126,9 +126,8 @@ window.PROJECTS = [
     body: [
       "<i>An open Thai singing dataset</i>",
       "80 minutes 52 seconds of Thai singing, fully labeled with PRINTmov's own Thai phoneme system, plus 7 minutes 10 seconds of foreign-language material.",
-      "Built to train DiffSinger neural singing models, including multi-speaker Thai synthesis.",
-      "Public release under CC BY-NC-SA 4.0, with a versioned phoneme dictionary and citation guidance.",
-      "Downloaded by <span data-ds-count>128</span> people since 2024, and still picked up every month. The showcase above features 26 community voicebanks trained on it."
+      "Used to train at least 111 publicly listed DiffSinger voicebanks, by studios including Tigermeat, NEODIVA, Lunai Project and Utau France.",
+      "Requested by <span data-ds-count>128</span> people since 2024. Released under CC BY-NC-SA 4.0 with a versioned phoneme dictionary and citation guidance."
     ],
     links: [
       { l: "Dataset Website", href: "https://thaids.printmov.com/" }
