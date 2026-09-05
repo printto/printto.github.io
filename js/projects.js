@@ -145,7 +145,8 @@ window.PROJECTS = [
     ],
     body: [
       "<i>18 trained singing voice models</i>",
-      "6 original voicebanks, plus 12 trained in collaboration with creators who manage their own characters, all running on DiffSinger and most covering 7 or more languages.",
+      "6 are PRINTmov's own characters. The other 12 were trained for creators elsewhere in the scene.",
+      "Multilingual coverage comes from a data exchange with vocal synth groups abroad: PRINTmov contributes Thai phoneme data, they contribute theirs.",
       "The flagship, Printto Magicbeat, sings in 10 languages and has been maintained since 2014, carried across 4 synthesis engines: UTAU, DeepVocal, ENUNU, and DiffSinger."
     ],
     links: [
