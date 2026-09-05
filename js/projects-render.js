@@ -113,7 +113,7 @@
 
 
   function card(p) {
-    var groups = p.groups || [];
+    var groups = p.domains || p.groups || [];
 
     var html = '<div class="col-md-6 col-lg-4 project-card" data-groups=" ' + attr(groups.join(" ")) +
       ' "><div class="card">' + media(p.media) + '<div class="card-body">';
@@ -146,15 +146,27 @@
   if (!mount) return;
 
   var projects = window.PROJECTS || [];
-  var categories = window.PROJECT_CATEGORIES || [];
+  var categories = window.PROJECT_DOMAINS || window.PROJECT_CATEGORIES || [];
 
   mount.innerHTML = '<div class="row" style="color: white;">' + projects.map(card).join("") + "</div>";
+
+  var dsCount = mount.querySelector("[data-ds-count]");
+  if (dsCount && window.fetch) {
+    fetch("https://printto-diff-svc-register.onrender.com/dataset-summary")
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (d && typeof d.downloaders === "number" && d.downloaders > 0) {
+          dsCount.textContent = d.downloaders.toLocaleString();
+        }
+      })
+      .catch(function () {});
+  }
 
   if (!toolbar) return;
 
   function countIn(group) {
     return projects.filter(function (p) {
-      return (p.groups || []).indexOf(group) !== -1;
+      return (p.domains || p.groups || []).indexOf(group) !== -1;
     }).length;
   }
 

@@ -1,6 +1,7 @@
 window.PROJECTS = [
   {
     groups: ["apps", "frontend"],
+    domains: ["ai", "tools", "web"],
     title: "Weshape",
     media: { type: "youtube", src: "https://www.youtube.com/embed/iV7vv1e0AJk" },
     badges: [
@@ -18,6 +19,7 @@ window.PROJECTS = [
   },
   {
     groups: ["games"],
+    domains: ["games"],
     title: "Knitten <strong>(1st Place Winner)</strong>",
     media: { type: "youtube", src: "https://www.youtube.com/embed/9OwEGfTw734?si=zXPOT39eVP4izG-b&start=16" },
     badges: [
@@ -37,6 +39,7 @@ window.PROJECTS = [
   },
   {
     groups: ["xr"],
+    domains: ["xr"],
     title: "MRX: Kubota x WEDO",
     media: { type: "youtube", src: "https://www.youtube.com/embed/ef8sYi7DyRQ?start=94" },
     badges: [
@@ -55,6 +58,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps", "frontend"],
+    domains: ["ai", "tools", "web"],
     title: "PRINTmov Vocal",
     media: { type: "youtube", src: "https://www.youtube.com/embed/oMUXAV_Izx8" },
     badges: [
@@ -74,6 +78,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps"],
+    domains: ["ai", "tools"],
     title: "CENGINE",
     media: { type: "youtube", src: "https://www.youtube.com/embed/f5JH_weCk1g" },
     badges: [
@@ -92,6 +97,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps", "frontend", "backend"],
+    domains: ["tools", "web"],
     title: "CENGINE Remote",
     media: { type: "youtube", src: "https://www.youtube.com/embed/-7uRgaLbpqI" },
     badges: [
@@ -107,7 +113,49 @@ window.PROJECTS = [
     ]
   },
   {
+    groups: ["other"],
+    domains: ["ai"],
+    title: "Printto TH Dataset",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/pI1vV92dLuo" },
+    badges: [
+      { v: "printmov", l: "PRINTmov" },
+      { v: "success", l: "Public Dataset" },
+      { v: "secondary", l: "DiffSinger" },
+      { v: "secondary", l: "Thai Phoneme System" }
+    ],
+    body: [
+      "<i>An open Thai singing dataset</i>",
+      "80 minutes 52 seconds of Thai singing, fully labeled with PRINTmov's own Thai phoneme system, plus 7 minutes 10 seconds of foreign-language material.",
+      "Built to train DiffSinger neural singing models, including multi-speaker Thai synthesis.",
+      "Public release under CC BY-NC-SA 4.0, with a versioned phoneme dictionary and citation guidance.",
+      "Downloaded by <span data-ds-count>128</span> people since 2024, and still picked up every month. The showcase above features 26 community voicebanks trained on it."
+    ],
+    links: [
+      { l: "Dataset Website", href: "https://thaids.printmov.com/" }
+    ]
+  },
+  {
+    groups: ["other"],
+    domains: ["ai"],
+    title: "PRINTmov Voicebanks",
+    media: { type: "youtube", src: "https://www.youtube.com/embed/qItGvB3bnJw" },
+    badges: [
+      { v: "printmov", l: "PRINTmov" },
+      { v: "secondary", l: "DiffSinger" },
+      { v: "secondary", l: "Model Training" }
+    ],
+    body: [
+      "<i>18 trained singing voice models</i>",
+      "6 original voicebanks, plus 12 trained in collaboration with creators who manage their own characters, all running on DiffSinger and most covering 7 or more languages.",
+      "The flagship, Printto Magicbeat, sings in 10 languages and has been maintained since 2014, carried across 4 synthesis engines: UTAU, DeepVocal, ENUNU, and DiffSinger."
+    ],
+    links: [
+      { l: "Voicebank Website", href: "https://www.printmov.com/singers" }
+    ]
+  },
+  {
     groups: ["apps"],
+    domains: ["tools"],
     title: "OpenUtau PRINTmov",
     media: { type: "youtube", src: "https://www.youtube.com/embed/5mly2m85rBc" },
     badges: [
@@ -126,6 +174,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps", "frontend"],
+    domains: ["tools", "web"],
     title: "PRINTmov Motion",
     media: { type: "image", src: "img/projects/printmov-motion.png" },
     badges: [
@@ -145,6 +194,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps", "frontend", "backend"],
+    domains: ["ai", "tools", "web"],
     title: "PRINTmov Speak",
     media: { type: "youtube", src: "https://www.youtube.com/embed/GmB4Y0MjiGI" },
     badges: [
@@ -161,6 +211,7 @@ window.PROJECTS = [
   },
   {
     groups: ["xr"],
+    domains: ["xr"],
     title: "SCG The Next Chapter",
     media: { type: "youtube", src: "https://www.youtube.com/embed/yH3CEuOn7KA" },
     badges: [
@@ -178,6 +229,7 @@ window.PROJECTS = [
   },
   {
     groups: ["other"],
+    domains: ["ai", "xr"],
     title: "Full-body Tracking Prototype",
     media: { type: "youtube", src: "https://www.youtube.com/embed/kuU6cbhGmRc" },
     badges: [
@@ -195,6 +247,7 @@ window.PROJECTS = [
   },
   {
     groups: ["games"],
+    domains: ["games"],
     title: "Uptown Outbreak",
     media: { type: "youtube", src: "https://www.youtube.com/embed/Zw4_arRSCbQ" },
     badges: [
@@ -213,6 +266,7 @@ window.PROJECTS = [
   },
   {
     groups: ["games"],
+    domains: ["games"],
     title: "Toyota Road Safety Game",
     media: { type: "youtube", src: "https://www.youtube.com/embed/orpI0Ol93YA" },
     badges: [
@@ -234,6 +288,7 @@ window.PROJECTS = [
   },
   {
     groups: ["games"],
+    domains: ["games"],
     title: "Kubota i-Gen",
     media: { type: "youtube", src: "https://youtube.com/embed/40qvxWhH3IY" },
     badges: [
@@ -255,6 +310,7 @@ window.PROJECTS = [
   },
   {
     groups: ["games"],
+    domains: ["web"],
     title: "Yamaha Virtual Event 2021",
     media: { type: "youtube", src: "https://youtube.com/embed/e27H_7bnl64" },
     badges: [
@@ -272,6 +328,7 @@ window.PROJECTS = [
   },
   {
     groups: ["frontend"],
+    domains: ["web"],
     title: "dtac Dataland",
     media: { type: "image", src: "img/projects/dtac2.png" },
     badges: [
@@ -291,6 +348,7 @@ window.PROJECTS = [
   },
   {
     groups: ["frontend"],
+    domains: ["web"],
     title: "Interboosters",
     media: { type: "image", src: "img/projects/interboosters2.gif" },
     badges: [
@@ -311,6 +369,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps"],
+    domains: ["tools"],
     title: "BLA Photo Booth",
     media: { type: "youtube", src: "https://youtube.com/embed/Fx-JEXiwpvY" },
     badges: [
@@ -327,6 +386,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps", "xr"],
+    domains: ["xr", "tools"],
     title: "SCGP AR Placement",
     media: { type: "youtube", src: "https://www.youtube.com/embed/rAw_g3MzONM" },
     badges: [
@@ -344,6 +404,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps", "xr"],
+    domains: ["xr"],
     title: "SCGP Clixpack AR",
     media: { type: "youtube", src: "https://www.youtube.com/embed/RZ2stTDvVsA" },
     badges: [
@@ -361,6 +422,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps"],
+    domains: ["tools"],
     title: "TPI Wall 3D Room",
     media: { type: "youtube", src: "https://youtube.com/embed/XQPKYLNCDvQ" },
     badges: [
@@ -379,6 +441,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps"],
+    domains: ["tools"],
     title: "Butterfly Garden",
     media: { type: "youtube", src: "https://www.youtube.com/embed/wfJrWjUeLPM" },
     badges: [
@@ -395,6 +458,7 @@ window.PROJECTS = [
   },
   {
     groups: ["frontend"],
+    domains: ["web"],
     title: "PRINTmov Festival 2022",
     media: { type: "image", src: "img/projects/printmov-festival.gif" },
     badges: [
@@ -416,6 +480,7 @@ window.PROJECTS = [
   },
   {
     groups: ["games"],
+    domains: ["games"],
     title: "InkIt - Kajaani Winter GameJam 2019",
     media: { type: "youtube", src: "https://youtube.com/embed/wR9P_eidf2w" },
     badges: [
@@ -433,6 +498,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps", "backend"],
+    domains: ["web"],
     title: "UTANITY Synth Party 2025",
     media: { type: "youtube", src: "https://www.youtube.com/embed/OwRy4RT8oxQ" },
     badges: [
@@ -452,6 +518,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps"],
+    domains: ["web"],
     title: "UTANITY Synth Party 2022",
     media: { type: "youtube", src: "https://www.youtube.com/embed/zKv3CrRSApQ" },
     badges: [
@@ -470,6 +537,7 @@ window.PROJECTS = [
   },
   {
     groups: ["backend"],
+    domains: ["web"],
     title: "PRINTlish",
     media: { type: "youtube", src: "https://www.youtube.com/embed/59bYml5Qpz0" },
     badges: [
@@ -490,6 +558,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps", "xr"],
+    domains: ["xr", "tools"],
     title: "chARlie",
     media: { type: "youtube", src: "https://www.youtube.com/embed/KxoVxflMV84" },
     badges: [
@@ -508,6 +577,7 @@ window.PROJECTS = [
   },
   {
     groups: ["frontend", "xr"],
+    domains: ["xr", "web"],
     title: "Dr.Jill - AR Filter Website",
     media: { type: "image", src: "img/projects/drjill.png" },
     badges: [
@@ -528,6 +598,7 @@ window.PROJECTS = [
   },
   {
     groups: ["frontend"],
+    domains: ["web"],
     title: "Baxter - Introducing Three Chamber Bag Containing",
     media: { type: "image", src: "img/projects/baxter-countdown.png" },
     badges: [
@@ -548,6 +619,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps", "frontend"],
+    domains: ["tools", "web"],
     title: "PRINTmov Splice",
     media: { type: "image", src: "img/projects/printmov-splice.png" },
     badges: [
@@ -565,6 +637,7 @@ window.PROJECTS = [
   },
   {
     groups: ["frontend"],
+    domains: ["web"],
     title: "Judjarn Namplawan",
     media: { type: "image", src: "img/projects/Judjarn.png" },
     badges: [
@@ -580,6 +653,7 @@ window.PROJECTS = [
   },
   {
     groups: ["frontend"],
+    domains: ["web"],
     title: "ARSLONGA Studio",
     media: { type: "image", src: "img/projects/arslonga.png" },
     badges: [
@@ -596,6 +670,7 @@ window.PROJECTS = [
   },
   {
     groups: ["xr"],
+    domains: ["xr"],
     title: "Coca-Cola No Sugar AR",
     media: { type: "youtube", src: "https://youtube.com/embed/GePPqQVjWKI" },
     badges: [
@@ -614,6 +689,7 @@ window.PROJECTS = [
   },
   {
     groups: ["xr"],
+    domains: ["xr", "games"],
     title: "Pomelo - Bugs Bunny AR",
     media: { type: "youtube", src: "https://youtube.com/embed/hoorefNZdMM" },
     badges: [
@@ -632,6 +708,7 @@ window.PROJECTS = [
   },
   {
     groups: ["xr"],
+    domains: ["xr", "games"],
     title: "Tom and Jerry Blink Race AR",
     media: { type: "youtube", src: "https://www.youtube.com/embed/uTbSzx0_jyo" },
     badges: [
@@ -650,6 +727,7 @@ window.PROJECTS = [
   },
   {
     groups: ["xr"],
+    domains: ["xr", "games"],
     title: "Milo Game AR",
     media: { type: "youtube", src: "https://youtube.com/embed/-kj1Nt4TZT0" },
     badges: [
@@ -668,6 +746,7 @@ window.PROJECTS = [
   },
   {
     groups: ["other"],
+    domains: ["ai"],
     title: "SCGC Aily",
     media: { type: "youtube", src: "https://www.youtube.com/embed/wjQoBBFNMUk" },
     badges: [
@@ -684,6 +763,7 @@ window.PROJECTS = [
   },
   {
     groups: ["frontend"],
+    domains: ["web"],
     title: "Zilk Wallpaper",
     media: { type: "youtube", src: "https://www.youtube.com/embed/DcyPg-4klZ8" },
     badges: [
@@ -703,6 +783,7 @@ window.PROJECTS = [
   },
   {
     groups: ["games"],
+    domains: ["games"],
     title: "Meiji Jigsaw",
     media: { type: "youtube", src: "https://youtube.com/embed/Q7VAQ5RXZvU" },
     badges: [
@@ -718,6 +799,7 @@ window.PROJECTS = [
   },
   {
     groups: ["games"],
+    domains: ["games"],
     title: "Tiger - Run Athletics",
     media: { type: "youtube", src: "https://youtube.com/embed/939OeVBmSEQ" },
     badges: [
@@ -733,6 +815,7 @@ window.PROJECTS = [
   },
   {
     groups: ["games", "xr"],
+    domains: ["xr", "games"],
     title: "ARGhost",
     media: { type: "youtube", src: "https://youtube.com/embed/4bP1rvzgHeA" },
     badges: [
@@ -750,6 +833,7 @@ window.PROJECTS = [
   },
   {
     groups: ["games"],
+    domains: ["games"],
     title: "The Dawn of the Epic Legend of the Tales of the Legendary Power Mage: The Reckoning",
     media: { type: "youtube", src: "https://youtube.com/embed/BggA0cktmCM" },
     badges: [
@@ -765,6 +849,7 @@ window.PROJECTS = [
   },
   {
     groups: ["games"],
+    domains: ["games"],
     title: "ParallelBro",
     media: { type: "image", src: "img/projects/parallelbro.gif" },
     badges: [
@@ -783,6 +868,7 @@ window.PROJECTS = [
   },
   {
     groups: ["apps", "backend"],
+    domains: ["games"],
     title: "Digi-Idle Ver.1",
     media: { type: "youtube", src: "https://youtube.com/embed/cUI3_9q2O8w?start=60" },
     badges: [
@@ -801,6 +887,7 @@ window.PROJECTS = [
   },
   {
     groups: ["games"],
+    domains: ["games"],
     title: "Skullbreak",
     media: { type: "youtube", src: "https://youtube.com/embed/kz2mH1xPeVI" },
     badges: [
@@ -819,6 +906,7 @@ window.PROJECTS = [
   },
   {
     groups: ["backend"],
+    domains: ["web"],
     title: "SixerDev - Boardgame Store",
     media: { type: "image", src: "img/projects/SixerDev.png" },
     badges: [
@@ -840,6 +928,7 @@ window.PROJECTS = [
   },
   {
     groups: ["frontend"],
+    domains: ["web"],
     title: "REST Project",
     media: { type: "image", src: "img/projects/REST.png" },
     badges: [
@@ -858,6 +947,7 @@ window.PROJECTS = [
   },
   {
     groups: ["frontend"],
+    domains: ["web"],
     title: "Portrait Touch",
     media: { type: "image", src: "img/projects/portrait.png" },
     badges: [
@@ -875,6 +965,7 @@ window.PROJECTS = [
   },
   {
     groups: ["games", "xr"],
+    domains: ["xr", "games"],
     title: "Vrive",
     media: { type: "image", src: "img/projects/vrive.png" },
     badges: [
@@ -898,4 +989,12 @@ window.PROJECT_CATEGORIES = [
   { group: "xr", label: "XR" },
   { group: "backend", label: "Back-end" },
   { group: "other", label: "Other" }
+];
+
+window.PROJECT_DOMAINS = [
+  { group: "ai", label: "AI & Machine Learning" },
+  { group: "xr", label: "Spatial Computing & XR" },
+  { group: "tools", label: "Tools & Editors" },
+  { group: "games", label: "Games" },
+  { group: "web", label: "Web & Platforms" }
 ];
