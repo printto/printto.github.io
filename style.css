@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
-  width: 100vw;
+  overflow-x: clip;
+  width: 100%;
 }
 
 .full-width {
@@ -118,10 +119,9 @@ body {
 }
 
 .card-desc {
-  flex: 0 0 auto;
-  max-height: 150px;
+  flex: 1 1 150px;
+  min-height: 0;
   overflow-y: auto;
-  overscroll-behavior: contain;
   padding-right: 6px;
   scrollbar-width: thin;
   scrollbar-color: #6a6a6a transparent;
@@ -284,4 +284,22 @@ a.project-link:focus-visible {
   .project-link.is-off::after {
     opacity: 0.55;
   }
+}
+
+.badge-printmov {
+  color: #fff;
+  background-color: #03adfc;
+}
+
+.badge-ascript {
+  color: #000;
+  background-color: #fff;
+}
+
+.card .badge {
+  padding: 0.31em 0.4em 0.19em;
+}
+.card-img-top[src$="parallelbro.gif"] {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
