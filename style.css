@@ -44,6 +44,7 @@ body {
   background: linear-gradient(0deg, rgba(75,75,75,0.5676645658263305) 0%, rgba(6,6,6,1) 100%);
   top: 0;
   right: 0;
+  z-index: 99999;
 }
 
 .card-body .btn-outline-light{

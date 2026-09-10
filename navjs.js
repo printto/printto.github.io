@@ -1,99 +1,4 @@
-$(document).ready(function () {
-  // Build nav inside #loadnav, but use the new layout/styling system
-  const $nav = $('<nav/>').appendTo('#loadnav');
-
-  $nav.addClass('no-transition');
-  $nav
-    .addClass('navbar navbar-expand-lg navbar-dark fixed-top')
-    .css({
-      position: 'fixed',
-      'z-index': 99999,
-      transition:
-        'background-color 0.5s ease, backdrop-filter 0.5s ease, -webkit-backdrop-filter 0.5s ease, left 0.5s ease, right 0.5s ease, top 0.5s ease, border-radius 0.5s ease, outline 0.5s ease'
-    })
-    .html(`
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/whitelogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-          <div id="flip" class="d-inline-block align-top">
-            Pappim Pipatkasrira
-          </div>
-        </a>
-        <button class="navbar-toggler" type="button"
-          data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link pnav-background">Background</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link pnav-profile" href="profile.html">Profile</a>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link pnav-project">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link pnav-contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pappim-pipatkasira-resume.pdf" target="_blank">Download PDF</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Download Profile
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="pappim-pipatkasrira-resume.pdf">PDF file</a>
-                <a class="dropdown-item" href="pappim-pipatkasrira-resume.zip">JPEG files (ZIP Archive)</a>
-              </div>
-            </li> -->
-          </ul>
-        </div>
-      </div>
-    `);
-
-  // Start as solid
-  $nav.addClass('nav-solid');
-
-  // Spacer so content doesn't jump under fixed nav
-  function ensureSpacer() {
-    // const id = 'nav-placeholder';
-    // if (!document.getElementById(id)) {
-    //   $('<div id="nav-placeholder" aria-hidden="true"></div>').insertAfter($nav);
-    // }
-    // $('#nav-placeholder').height($nav.outerHeight() || 0);
-  }
-
-  ensureSpacer();
-  setTimeout(ensureSpacer, 0);
-
-  $(document).on('shown.bs.collapse hidden.bs.collapse', '#navbarNav', function () {
-    ensureSpacer();
-    computeSectionOffsets();
-  });
-
-  $(window).on('resize', function () {
-    ensureSpacer();
-    computeSectionOffsets();
-  });
-
-  // Glass vs solid behaviour
-  function updateGlass() {
-    if (window.scrollY > 0) {
-      $nav.removeClass('nav-solid').addClass('nav-glass');
-    } else {
-      $nav.removeClass('nav-glass').addClass('nav-solid');
-    }
-  }
-
-  updateGlass();
-  $(window).on('scroll', updateGlass);
-
-  // Inject styles for nav-glass / nav-solid
+(function () {
   const style = `
     <style>
     nav.no-transition {
@@ -124,9 +29,111 @@ $(document).ready(function () {
   `;
   $('head').append(style);
 
+  // Build nav inside #loadnav, but use the new layout/styling system
+  const $nav = $('<nav/>').appendTo('#loadnav');
+
+  $nav.addClass('no-transition');
+  $nav
+    .addClass('navbar navbar-expand-lg navbar-dark fixed-top')
+    .css({
+      position: 'fixed',
+      'z-index': 99999,
+      transition:
+        'background-color 0.5s ease, backdrop-filter 0.5s ease, -webkit-backdrop-filter 0.5s ease, left 0.5s ease, right 0.5s ease, top 0.5s ease, border-radius 0.5s ease, outline 0.5s ease'
+    })
+    .html(`
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/whitelogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          <div id="flip" class="d-inline-block align-top">
+            Pappim Pipatkasrira
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link pnav-background active">Background</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link pnav-profile" href="profile.html">Profile</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link pnav-project">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pnav-contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pappim-pipatkasira-resume.pdf" target="_blank">Download PDF</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Download Profile
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="pappim-pipatkasrira-resume.pdf">PDF file</a>
+                <a class="dropdown-item" href="pappim-pipatkasrira-resume.zip">JPEG files (ZIP Archive)</a>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    `);
+
+  // Glass vs solid behaviour
+  function updateGlass() {
+    if (window.scrollY > 0) {
+      $nav.removeClass('nav-solid').addClass('nav-glass');
+    } else {
+      $nav.removeClass('nav-glass').addClass('nav-solid');
+    }
+  }
+
+  updateGlass();
+  $(window).on('scroll', updateGlass);
+
   // Enable transitions after first paint
   requestAnimationFrame(() => {
     setTimeout(() => $nav.removeClass('no-transition'), 100);
+  });
+
+  // Click handlers
+  $nav.find('.pnav-background').click(function () {
+    const el = document.querySelector('#profile');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+
+  $nav.find('.pnav-project').click(function () {
+    const el = document.querySelector('#projects');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+
+  $nav.find('.pnav-contact').click(function () {
+    const el = document.querySelector('#contact-selector');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+})();
+
+// Everything below needs the page sections, so it still waits for the DOM
+$(document).ready(function () {
+  $(document).on('shown.bs.collapse hidden.bs.collapse', '#navbarNav', function () {
+    computeSectionOffsets();
+  });
+
+  $(window).on('resize', function () {
+    computeSectionOffsets();
   });
 
   // Presentation mode hotkeys (kept from original)
@@ -205,28 +212,6 @@ $(document).ready(function () {
 
   // Initial highlight
   updateActiveNav();
-
-  // Click handlers
-  $('.pnav-background').click(function () {
-    const el = document.querySelector('#profile');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-
-  $('.pnav-project').click(function () {
-    const el = document.querySelector('#projects');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-
-  $('.pnav-contact').click(function () {
-    const el = document.querySelector('#contact-selector');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
 });
 
 // Keep global presentationMode helper
